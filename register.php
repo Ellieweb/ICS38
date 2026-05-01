@@ -1,16 +1,16 @@
 <?php
-// include('db.php');
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $name = $_POST['fullname'];
-//     $email = $_POST['email'];
-//     $pass = $_POST['password']; // In production, use password_hash()
-//     $role = $_POST['role'];
+include('db.php');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['fullname'];
+    $email = $_POST['email'];
+    $pass = $_POST['password']; // In production, use password_hash()
+    $role = $_POST['role'];
 
-//     $sql = "INSERT INTO users (fullname, email, password, role) VALUES ('$name', '$email', '$pass', '$role')";
-//     if ($conn->query($sql)) { header("Location: login.php"); }
-// }
+    $sql = "INSERT INTO users (fullname, email, password, role) VALUES ('$name', '$email', '$pass', '$role')";
+    if ($conn->query($sql)) { header("Location: login.php"); }
+}
 ?>
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><link rel="stylesheet" href="MyCSS/style.css"><title>Register</title></head>
 <body>
@@ -26,4 +26,4 @@
         <p>Already have an account? <a href="login.php">Login here</a></p>
     </div>
 </body>
-</html> -->
+</html>
