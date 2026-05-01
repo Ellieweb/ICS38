@@ -1,0 +1,26 @@
+/* :root {
+    --univ-blue: #003366;
+    --light-blue: #e6f0ff;
+    --white: #ffffff;
+    --gray: #f4f4f4;
+}
+
+body { font-family: 'Segoe UI', sans-serif; background-color: var(--gray); margin: 0; }
+
+/* Navigation */
+nav { background: var(--univ-blue); color: white; padding: 1rem; display: flex; justify-content: space-between; }
+nav a { color: white; text-decoration: none; margin-left: 15px; }
+
+/* Forms & Cards */
+.container { width: 80%; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+h2 { color: var(--univ-blue); border-bottom: 2px solid var(--univ-blue); padding-bottom: 10px; }
+
+input, select, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
+button { background: var(--univ-blue); color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
+button:hover { background: #002244; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+table th { background: var(--univ-blue); color: white; padding: 12px; text-align: left; }
+table td { padding: 12px; border-bottom: 1px solid #ddd; }
+tr:nth-child(even) { background-color: var(--light-blue); } */
