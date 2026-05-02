@@ -8,13 +8,13 @@ if (!isset($_SESSION['user_id'])) {
     exit(); 
 }
 
-// $current_user_id = $_SESSION['user_id'];
+$current_user_id = $_SESSION['user_id'];
 
-// /** * FEATURE: Toggle Category Filter [Requirement 2: Search/Sort]
-//  * This replaces the manual text search with quick-click category buttons.
-//  */
-// $category_filter = isset($_GET['category']) ? mysqli_real_escape_string($conn, $_GET['category']) : "";
-// $where_clause = "";
+/** * FEATURE: Toggle Category Filter [Requirement 2: Search/Sort]
+ * This replaces the manual text search with quick-click category buttons.
+ */
+$category_filter = isset($_GET['category']) ? mysqli_real_escape_string($conn, $_GET['category']) : "";
+$where_clause = "";
 
 // if ($category_filter !== "") {
 //     // Dynamically builds the WHERE clause based on the clicked button
