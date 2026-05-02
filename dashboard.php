@@ -16,20 +16,20 @@ $current_user_id = $_SESSION['user_id'];
 $category_filter = isset($_GET['category']) ? mysqli_real_escape_string($conn, $_GET['category']) : "";
 $where_clause = "";
 
-// if ($category_filter !== "") {
-//     // Dynamically builds the WHERE clause based on the clicked button
-//     $where_clause = " WHERE resources.category = '$category_filter' ";
-// }
+if ($category_filter !== "") {
+    // Dynamically builds the WHERE clause based on the clicked button
+    $where_clause = " WHERE resources.category = '$category_filter' ";
+}
 
-// /** * REQUIREMENT: SQL JOIN [Requirement 3: SQL Join Integration]
-//  * Joins 'resources' with 'users' to display the author's name from a different table.
-//  */
-// $sql = "SELECT resources.*, users.fullname 
-//         FROM resources 
-//         INNER JOIN users ON resources.user_id = users.user_id 
-//         $where_clause
-//         ORDER BY created_at DESC";
-// $resources = $conn->query($sql);
+/** * REQUIREMENT: SQL JOIN [Requirement 3: SQL Join Integration]
+ * Joins 'resources' with 'users' to display the author's name from a different table.
+ */
+$sql = "SELECT resources.*, users.fullname 
+        FROM resources 
+        INNER JOIN users ON resources.user_id = users.user_id 
+        $where_clause
+        ORDER BY created_at DESC";
+$resources = $conn->query($sql);
 
 // /**
 //  * REQUIREMENT: Statistics for Chart.js [Requirement 2: Charts]
