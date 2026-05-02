@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="MyCSS/style.css">
@@ -38,4 +38,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>New here? <a href="register.php">Register</a></p>
     </div>
 </body>
-</html> -->
+</html>
