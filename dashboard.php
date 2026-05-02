@@ -31,18 +31,18 @@ $sql = "SELECT resources.*, users.fullname
         ORDER BY created_at DESC";
 $resources = $conn->query($sql);
 
-// /**
-//  * REQUIREMENT: Statistics for Chart.js [Requirement 2: Charts]
-//  */
-// $chart_sql = "SELECT category, COUNT(*) as count FROM resources GROUP BY category";
-// $chart_result = $conn->query($chart_sql);
-// $categories = [];
-// $counts = [];
+/**
+ * REQUIREMENT: Statistics for Chart.js [Requirement 2: Charts]
+ */
+$chart_sql = "SELECT category, COUNT(*) as count FROM resources GROUP BY category";
+$chart_result = $conn->query($chart_sql);
+$categories = [];
+$counts = [];
 
-// while($c_row = $chart_result->fetch_assoc()) {
-//     $categories[] = $c_row['category'];
-//     $counts[] = $c_row['count'];
-// }
+while($c_row = $chart_result->fetch_assoc()) {
+    $categories[] = $c_row['category'];
+    $counts[] = $c_row['count'];
+}
 ?>
 
 <!-- <!DOCTYPE html>
