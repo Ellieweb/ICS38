@@ -45,7 +45,7 @@ while($c_row = $chart_result->fetch_assoc()) {
 }
 ?>
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="MyCSS/style.css">
@@ -63,7 +63,7 @@ while($c_row = $chart_result->fetch_assoc()) {
             background: #002244; /* Darker blue for selected category */
             box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
         }
-    </style> -->
+    </style>
 <!-- </head>
 <body>
     <nav>
