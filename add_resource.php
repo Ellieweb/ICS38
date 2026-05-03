@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" name="title" placeholder="Resource Title (e.g. Calculus Textbook)" required>
             <select name="category">
                 <option value="Textbook">Textbook</option>
-                <!-- <option value="Computer Parts">Computer Parts</option>
+                <option value="Computer Parts">Computer Parts</option>
                 <option value="Notes">Notes</option>
                 <option value="Coloring Materials">Coloring Materials</option>
             </select>
@@ -35,4 +35,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
 </body>
-</html> -->
+</html>
