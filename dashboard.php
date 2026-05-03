@@ -64,7 +64,7 @@ while($c_row = $chart_result->fetch_assoc()) {
             box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
         }
     </style>
-<!-- </head>
+</head>
 <body>
     <nav>
         <span><strong>Student Resource Hub</strong></span>
@@ -80,7 +80,7 @@ while($c_row = $chart_result->fetch_assoc()) {
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
             <div>
                 <a href="add_resource.php"><button style="background: #28a745;">+ Post New Resource</button></a>
-            </div> -->
+            </div>
 
             <!-- <div style="display: flex; gap: 5px; flex-wrap: wrap;">
                 <span style="align-self: center; font-weight: bold; margin-right: 10px;">Filter:</span>
