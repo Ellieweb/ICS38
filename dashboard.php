@@ -154,7 +154,7 @@ while($c_row = $chart_result->fetch_assoc()) {
         </div>
     </div>
 
-    <!-- <script>
+    <script>
         const ctx = document.getElementById('myChart');
         new Chart(ctx, {
             type: 'bar',
@@ -178,4 +178,4 @@ while($c_row = $chart_result->fetch_assoc()) {
         });
     </script>
 </body>
-</html>  -->
+</html> 
