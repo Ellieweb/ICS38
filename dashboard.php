@@ -82,7 +82,7 @@ while($c_row = $chart_result->fetch_assoc()) {
                 <a href="add_resource.php"><button style="background: #28a745;">+ Post New Resource</button></a>
             </div>
 
-            <!-- <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+            <div style="display: flex; gap: 5px; flex-wrap: wrap;">
                 <span style="align-self: center; font-weight: bold; margin-right: 10px;">Filter:</span>
                 
                 <a href="dashboard.php">
@@ -99,9 +99,9 @@ while($c_row = $chart_result->fetch_assoc()) {
                 
                 <a href="dashboard.php?category=Notes">
                     <button class="filter-btn <?php echo $category_filter == 'Notes' ? 'active' : ''; ?>">Notes</button>
-                </a> -->
+                </a>
                 
-                <!-- <a href="dashboard.php?category=Coloring Materials">
+                <a href="dashboard.php?category=Coloring Materials">
                     <button class="filter-btn <?php echo $category_filter == 'Coloring Materials' ? 'active' : ''; ?>">Coloring Materials</button>
                 </a>
             </div>
@@ -128,8 +128,8 @@ while($c_row = $chart_result->fetch_assoc()) {
                             <?php echo $row['status']; ?>
                         </span>
                     </td>
-                    <td> -->
-                        <!-- <?php if ($row['user_id'] == $current_user_id): ?>
+                    <td>
+                        <?php if ($row['user_id'] == $current_user_id): ?>
                             <a href="edit_resource.php?id=<?php echo $row['resource_id']; ?>">Edit</a> | 
                             <a href="delete_resource.php?id=<?php echo $row['resource_id']; ?>" 
                                style="color:red;" 
@@ -152,7 +152,7 @@ while($c_row = $chart_result->fetch_assoc()) {
         <div style="background: #f9f9f9; padding: 20px; border-radius: 8px;">
             <canvas id="myChart" style="max-height: 300px;"></canvas>
         </div>
-    </div> -->
+    </div>
 
     <!-- <script>
         const ctx = document.getElementById('myChart');
