@@ -33,11 +33,11 @@ $uid = $_SESSION['user_id'];
 $check_sql = "SELECT * FROM resources WHERE resource_id = $id AND user_id = $uid";
 $res_query = $conn->query($check_sql);
 
-// if (!$res_query || $res_query->num_rows == 0) {
-//     // If resource doesn't exist OR doesn't belong to the user, redirect
-//     header("Location: dashboard.php?msg=unauthorized");
-//     exit();
-// }
+if (!$res_query || $res_query->num_rows == 0) {
+    // If resource doesn't exist OR doesn't belong to the user, redirect
+    header("Location: dashboard.php?msg=unauthorized");
+    exit();
+}
 
 // $res = $res_query->fetch_assoc();
 
