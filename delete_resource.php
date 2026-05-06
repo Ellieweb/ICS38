@@ -11,10 +11,10 @@ if (isset($_GET['id'])) {
     // Only delete if the resource ID belongs to the current user
     $sql = "DELETE FROM resources WHERE resource_id = $id AND user_id = $uid";
     
-//     if ($conn->query($sql)) {
-//         header("Location: dashboard.php?msg=success");
-//     } else {
-//         header("Location: dashboard.php?msg=error");
-//     }
-// }
+    if ($conn->query($sql)) {
+        header("Location: dashboard.php?msg=success");
+    } else {
+        header("Location: dashboard.php?msg=error");
+    }
+}
 ?>
