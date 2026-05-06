@@ -39,26 +39,26 @@ if (!$res_query || $res_query->num_rows == 0) {
     exit();
 }
 
-// $res = $res_query->fetch_assoc();
+$res = $res_query->fetch_assoc();
 
-// // 5. Handle Form Submission
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     // Sanitize inputs
-//     $title = mysqli_real_escape_string($conn, $_POST['title']);
-//     $status = mysqli_real_escape_string($conn, $_POST['status']);
+// 5. Handle Form Submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Sanitize inputs
+    $title = mysqli_real_escape_string($conn, $_POST['title']);
+    $status = mysqli_real_escape_string($conn, $_POST['status']);
     
-//     // Security: Update only if user_id matches to prevent unauthorized tampering
-//     $update_query = "UPDATE resources SET title='$title', status='$status' 
-//                      WHERE resource_id=$id AND user_id=$uid";
+    // Security: Update only if user_id matches to prevent unauthorized tampering
+    $update_query = "UPDATE resources SET title='$title', status='$status' 
+                     WHERE resource_id=$id AND user_id=$uid";
     
-//     if ($conn->query($update_query)) {
-//         header("Location: dashboard.php?msg=updated");
-//         exit();
-//     } else {
-//         // If the update fails, show the error instead of a white screen
-//         die("Update failed: " . $conn->error);
-//     }
-// }
+    if ($conn->query($update_query)) {
+        header("Location: dashboard.php?msg=updated");
+        exit();
+    } else {
+        // If the update fails, show the error instead of a white screen
+        die("Update failed: " . $conn->error);
+    }
+}
 ?>
 
 <!-- <!DOCTYPE html>
