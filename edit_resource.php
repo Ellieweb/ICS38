@@ -8,16 +8,16 @@ include('db.php');
 
 // 2. Check Database Connection
 if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
+    die("Connection failed: " . $conn->connect_error);
+}
 
-// // 3. Security: Check if user is logged in
-// if (!isset($_SESSION['user_id'])) { 
-//     header("Location: login.php"); 
-//     exit(); 
-// }
+// 3. Security: Check if user is logged in
+if (!isset($_SESSION['user_id'])) { 
+    header("Location: login.php"); 
+    exit(); 
+}
 
-// // 4. Validate ID
+// 4. Validate ID
 // if (!isset($_GET['id'])) {
 //     header("Location: dashboard.php");
 //     exit();
