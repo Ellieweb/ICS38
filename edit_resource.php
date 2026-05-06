@@ -17,21 +17,21 @@ if (!isset($_SESSION['user_id'])) {
     exit(); 
 }
 
-// 4. Validate ID
-// if (!isset($_GET['id'])) {
-//     header("Location: dashboard.php");
-//     exit();
-// }
+4. Validate ID
+if (!isset($_GET['id'])) {
+    header("Location: dashboard.php");
+    exit();
+}
 
-// $id = (int)$_GET['id'];
-// $uid = $_SESSION['user_id'];
+$id = (int)$_GET['id'];
+$uid = $_SESSION['user_id'];
 
-// /**
-//  * AUTHORIZATION CHECK
-//  * We fetch the resource ONLY if it belongs to the logged-in user.
-//  */
-// $check_sql = "SELECT * FROM resources WHERE resource_id = $id AND user_id = $uid";
-// $res_query = $conn->query($check_sql);
+/**
+ * AUTHORIZATION CHECK
+ * We fetch the resource ONLY if it belongs to the logged-in user.
+ */
+$check_sql = "SELECT * FROM resources WHERE resource_id = $id AND user_id = $uid";
+$res_query = $conn->query($check_sql);
 
 // if (!$res_query || $res_query->num_rows == 0) {
 //     // If resource doesn't exist OR doesn't belong to the user, redirect
