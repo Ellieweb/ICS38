@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="MyCSS/style.css">
@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label>Resource Title</label>
             <input type="text" name="title" value="<?php echo htmlspecialchars($res['title']); ?>" required>
             
-            <label>Update Status</label>
+            <!-- <label>Update Status</label>
             <select name="status">
                 <option value="Available" <?php echo ($res['status'] == 'Available') ? 'selected' : ''; ?>>Available</option>
                 <option value="Exchanged" <?php echo ($res['status'] == 'Exchanged') ? 'selected' : ''; ?>>Exchanged</option>
