@@ -1,13 +1,13 @@
-<!-- <?php
-// 1. Force error reporting (helps identify the cause of the white screen)
-// ini_set('display_errors', 1);
-// error_reporting(E_ALL);
+<?php
+1. Force error reporting (helps identify the cause of the white screen)
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-// session_start();
-// include('db.php');
+session_start();
+include('db.php');
 
-// // 2. Check Database Connection
-// if ($conn->connect_error) {
+// 2. Check Database Connection
+if ($conn->connect_error) {
 //     die("Connection failed: " . $conn->connect_error);
 // }
 
@@ -61,7 +61,7 @@
 // }
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="MyCSS/style.css">
