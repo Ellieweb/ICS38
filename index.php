@@ -1,5 +1,5 @@
 <?php
-// include 'db.php';
+include 'db.php';
 
-// echo "Database Connected Successfully!";
+echo "Database Connected Successfully!";
 ?>
