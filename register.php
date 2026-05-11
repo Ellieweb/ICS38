@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <!DOCTYPE html>
 <html>
-<head><link rel="stylesheet" href="MyCSS/style.css"><title>Register</title></head>
+<head><link rel="stylesheet" href="MyCSS/style.css"><title>Register Na!</title></head>
 <body>
     <div class="container" style="width: 400px;">
         <h2>Create Account</h2>
