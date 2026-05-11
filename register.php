@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <!DOCTYPE html>
 <html>
-<head><link rel="stylesheet" href="MyCSS/style.css"><title>Register Na!</title></head>
+<head><link rel="stylesheet" href="MyCSS/style.css"><title>Register Tara</title></head>
 <body>
     <div class="container" style="width: 400px;">
         <h2>Create Account</h2>
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="email" name="email" placeholder="Institutional Email" required>
             <input type="password" name="password" placeholder="Password" required>
             </select>
-            <button type="submit">Sign Up</button>
+            <button type="submit">Sign up</button>
         </form>
         <p>Already have an account? <a href="login.php">Login</a></p>
     </div>
