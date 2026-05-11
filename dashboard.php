@@ -141,7 +141,7 @@ while($c_row = $chart_result->fetch_assoc()) {
                 </tr>
                 <?php endwhile; ?>
                 <?php if($resources->num_rows == 0): ?>
-                    <tr><td colspan="5" style="text-align:center;">No resources found in this category.</td></tr>
+                    <tr><td colspan="5" style="text-align:center;">No resources found in this category, try another.</td></tr>
                 <?php endif; ?>
             </tbody>
         </table>
